@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+server/.pglite/
+*.log
+_blueprint_extract.txt
+.DS_Store
+coverage/

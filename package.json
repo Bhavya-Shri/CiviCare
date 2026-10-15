@@ -1,0 +1,19 @@
+{
+  "name": "civicare",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["server", "client"],
+  "description": "CiviCare — Community Emergency Readiness & Response. Academic DBMS prototype.",
+  "scripts": {
+    "dev": "concurrently -n server,client -c teal,amber \"npm run dev -w server\" \"npm run dev -w client\"",
+    "setup": "npm run setup -w server",
+    "seed": "npm run seed -w server",
+    "check": "npm run check -w server",
+    "test": "npm run test -w server",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
